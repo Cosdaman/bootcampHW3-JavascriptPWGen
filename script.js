@@ -28,15 +28,20 @@ function generatePassword() {
   }
   console.log(pwLength);
 
+  //character types prompts and validations
+  //lowercase
   pwLowCase = prompt("Do you want to include lowercase characters?", "Yes or No");
   pwLowCase = booleanCheck(pwLowCase);
   console.log(pwLowCase);
+  //uppercase
   pwUpCase = prompt("Do you want to include uppercase characters?", "Yes or No");
   pwUpCase = booleanCheck(pwUpCase);
   console.log(pwUpCase);
+  //numeric character
   pwNum = prompt("Do you want to include numeric characters?", "Yes or No");
   pwNum = booleanCheck(pwNum);
   console.log(pwNum);
+  //special characters
   pwSpChar = prompt("Do you want to include special characters?", "Yes or No");
   pwSpChar = booleanCheck(pwSpChar);
   console.log(pwSpChar);
