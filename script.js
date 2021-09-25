@@ -1,7 +1,14 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var pwLowCase, pwUpCase, pwNum, pwSpChar;
 
+//global variables
+var pwLowCase, pwUpCase, pwNum, pwSpChar, charSet;
+var lowCaseStr = "abcdefghijklmnopqrstuvqxyz";
+var UpCaseStr = lowCaseStr.toUpperCase();
+var numStr = "0123456789";
+var spCharStr = "!@#$%^&*()_+~`|}{[]\:;?><,./-=";
+
+console.log(spCharStr[1]);
 //validation for yes and no
 function booleanCheck(x) {
   if (x.toLowerCase() == "yes" || x.toLowerCase() == "y") {
