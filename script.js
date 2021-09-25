@@ -1,18 +1,17 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var loopCheck = 0;
+var pwLowCase, pwUpCase, pwNum, pwSpChar;
 
 //validation for yes and no
 function booleanCheck(x) {
   if (x.toLowerCase() == "yes" || x.toLowerCase() == "y") {
-    x = true;
+    return true;
   } else if (x.toLowerCase() == "no" || x.toLowerCase() == "n") {
-    x = false;
+    return false;
   } else {
-    alert("Please type either 'Yes' or 'No'. This is not case sensitive. ");
-    return loopCheck = 1;
+    alert("Please type either 'Yes' or 'No'. This is not case sensitive.");
+    throw 'not valid answer';
   }
-  return x;
 }
 
 //Generate password function
@@ -29,12 +28,18 @@ function generatePassword() {
   }
   console.log(pwLength);
 
-  var pwLowCase = prompt("Do you want to include lowercase characters?", "Yes or No");
-  booleanCheck(pwLowCase);
-  var pwUpCase = prompt("Do you want to include uppercase characters?", "Yes or No");
-  var pwNum = prompt("Do you want to include numeric characters?", "Yes or No");
-  var pwSpChar = prompt("Do you want to include special characters?", "Yes or No");
-
+  pwLowCase = prompt("Do you want to include lowercase characters?", "Yes or No");
+  pwLowCase = booleanCheck(pwLowCase);
+  console.log(pwLowCase);
+  pwUpCase = prompt("Do you want to include uppercase characters?", "Yes or No");
+  pwUpCase = booleanCheck(pwUpCase);
+  console.log(pwUpCase);
+  pwNum = prompt("Do you want to include numeric characters?", "Yes or No");
+  pwNum = booleanCheck(pwNum);
+  console.log(pwNum);
+  pwSpChar = prompt("Do you want to include special characters?", "Yes or No");
+  pwSpChar = booleanCheck(pwSpChar);
+  console.log(pwSpChar);
 }
 
 // Write password to the #password input
