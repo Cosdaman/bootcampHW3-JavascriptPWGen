@@ -53,16 +53,16 @@ function generatePassword() {
 
   //character types prompts and validations
   //lowercase
-  pwLowCase = prompt("Do you want to include lowercase characters?", "Yes or No");
+  pwLowCase = prompt("Do you want to include lowercase characters? | Y-Yes | N-No", "Yes or No");
   pwLowCase = booleanCheck(pwLowCase);
   //uppercase
-  pwUpCase = prompt("Do you want to include uppercase characters?", "Yes or No");
+  pwUpCase = prompt("Do you want to include uppercase characters? | Y-Yes | N-No", "Yes or No");
   pwUpCase = booleanCheck(pwUpCase);
   //numeric character
-  pwNum = prompt("Do you want to include numeric characters?", "Yes or No");
+  pwNum = prompt("Do you want to include numeric characters? | Y-Yes | N-No", "Yes or No");
   pwNum = booleanCheck(pwNum);
   //special characters
-  pwSpChar = prompt("Do you want to include special characters?", "Yes or No");
+  pwSpChar = prompt("Do you want to include special characters? | Y-Yes | N-No", "Yes or No");
   pwSpChar = booleanCheck(pwSpChar);
 
   //check for minimum 1 chartype
