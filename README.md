@@ -1,7 +1,9 @@
 # bootcampHW3-JavascriptPWGen
 
 Description:  
-This application is a password generator.  
+This project is aimed to demonstrate the developer's understanding of basic javascript.
+
+The application created is a password generator.  
 When the user presses the "Generate Password" button, the website will then ask the user a series of questions to determine the criteria of the password.  
 Once the user has successfully entered valid responses to the questions, the generator will then generate a password based on the criteria that the user has provided.  
 
