@@ -23,10 +23,13 @@ function booleanCheck(x) {
   }
 }
 
+//random number generator based on length of input
 function randNum(x) {
   return Math.floor(Math.random() * x.length);
 }
 
+
+//element picker for 2 dimensional array
 function elementPickerTwoDim(x) {
   var arr1, arr2;
   arr1 = randNum(x);
@@ -36,6 +39,7 @@ function elementPickerTwoDim(x) {
 
 //Generate password function
 function generatePassword() {
+  charSelected = [];
   var pwActual = [];
 
   //password length entry and validation
